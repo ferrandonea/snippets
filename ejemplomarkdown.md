@@ -171,7 +171,7 @@ See the section on [`code`](#code).
 
 ## Imagenes
 
-![Esto es una imagen aleatorioa](https://picsum.photos/#:~:text=a%20random%20image.-,https%3A//picsum.photos/200/300,-To%20get%20a "Aleatoria")
+![Esto es una imagen aleatorioa](https://picsum.photos/200 "Aleatoria")
 
 
 ## Link imagen

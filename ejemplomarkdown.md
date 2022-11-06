@@ -54,15 +54,21 @@ This is really***very***important text.
 3. Third item
 4. Fourth item
 
+otra forma
+
 1. First item
 1. Second item
 1. Third item
 1. Fourth item
 
+otra forma
+
 1. First item
 8. Second item
 3. Third item
 5. Fourth item
+
+otra forma
 
 1. First item
 2. Second item
@@ -77,15 +83,22 @@ This is really***very***important text.
 - Third item
 - Fourth item
 
+siguiente
+
 * First item
 * Second item
 * Third item
 * Fourth item
 
+siguiente
+
 + First item
 + Second item
 + Third item
 + Fourth item
+
+siguiente  siguiente
+
 
  First item
 - Second item

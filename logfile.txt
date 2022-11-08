@@ -1,4 +1,0 @@
-LOG: add devuelve valor 30
-LOG: add devuelve valor 30
-LOG: add devuelve valor 30
-LOG: add devuelve valor 7

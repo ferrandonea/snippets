@@ -1,0 +1,53 @@
+[
+    {
+        "name": "John Smith",
+        "age": 10,
+        "on_vacation": false,
+        "test_scores": [
+            66,
+            85,
+            39,
+            61,
+            16,
+            92,
+            33,
+            3,
+            87,
+            71
+        ]
+    },
+    {
+        "name": "Jane Doe",
+        "age": 10,
+        "on_vacation": false,
+        "test_scores": [
+            4,
+            73,
+            75,
+            4,
+            50,
+            83,
+            8,
+            23,
+            42,
+            23
+        ]
+    },
+    {
+        "name": "Isaac Newton",
+        "age": 30,
+        "on_vacation": true,
+        "test_scores": [
+            93,
+            96,
+            94,
+            92,
+            95,
+            90,
+            100,
+            98,
+            90,
+            94
+        ]
+    }
+]

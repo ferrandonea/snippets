@@ -5,8 +5,8 @@
     * **[Pandas Cheat Sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)** - Ordenar, slices, etc...
 
 ### Markdown
-1. **[Online Markdown Editor](https://dillinger.io/)
-2. **[Markdown Guide](https://www.markdownguide.org/) - Manual de markdown y otras cosas.
+1. **[Online Markdown Editor](https://dillinger.io/)**
+2. **[Markdown Guide](https://www.markdownguide.org/)** - Manual de markdown y otras cosas.
 
 ### Python Utils
 1. **[Strftime.org](https://strftime.org/)** - Para ver formato de fechas

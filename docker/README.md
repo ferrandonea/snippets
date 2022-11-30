@@ -74,14 +74,42 @@ Muestra la lista de imágenes
 ## Conexión a los contenedores
 Vamos a usar el archivo `index.js` que es una aplicación de node que se conecta a una BD mongo y que está en la raíz de este repo
 
+* En dockerhub buscamos mongo ya que necesitamos ciertos parámetros . Abajo en <a href="https://hub.docker.com/_/mongo">Docker Hub (Mongo)</a> salen instrucciones para configurarlo. **Todos los contenedores se configuran distinto**
+* En este caso necesitamos variables de entorno MONGO_INITDB_ROOT_USERNAME, MONGO_INITDB_ROOT_PASSWORD
+* Ahora descargamos la imagen de mongo con `docker pull mongo`
+* Ahora creamos el contenedor con `docker create -p27017:27107 --name monguito -e MONGO_INITDB_ROOT_USERNAME=nico -e MONGO_INITDB_ROOT_PASSWORD=password mongo`
+* Lo podemos iniciar con `docker start monguito` y verificamos con `docker ps`
+* Creamos un archivo Dockerfile y ahí escribimos las instrucciones para que se cree el contenedor
+    * Imagen base es node
+    * Creo ruta en el contenedor (no la máquina mia)
+    * Todo lo que escribamos va a ir ahí
+    * En copy se pone la ruta de mi pc y después la del contenedor
+    * expose abre el puerto, en la app era el 3000
+    * comando que debe ejecutar para que corra
 
+```
+FROM node:18
 
+RUN mkdir -p /home/app
 
+COPY . /home/app
 
+EXPOSE 3000
 
-
-
-
-
+CMD ["node", "/home/app/index.js"]
+```
+*
+    * ahora los contenedores no necesariamente se pueden comunicar, así que hay que hacer una **red de contenedores** . Podemos tener muchas redes con distintos contenedores.
+    * `docker network ls` : lista redes
+    * `docker network create mired` : con mired es el nombre de la red y nos va a escupir un mega id.
+    * para eliminar una red `docker network rm mired` (esto no viene ahora, es pa saber)
+    * corremos `docker build NOMBREIMAGEN:TAG RUTA` o en el ejemplo `docker build -t miapp:1 .` (el . es la ruta actual)
+    * con `docker images` chequeamos que esté OK
+    * ahora tengo que enlazar los contenedores a la red. El que tenía antes ya no sirve, tengo que hacerlo nuevamente
+    * `docker create -p27017:27017 --name monguito --network mired -e MONGO_INITDB_ROOT_USERNAME=nico -e MONGO_INITDB_ROOT_PASSWORD=password mongo`
+    * Creamos el contenedor de la aplicacion que recien pusimos en una imagen `docker create -p3000:3000 --name chanchito --network mired miapp:1`
+    * ahora partimos los contenedores `docker start monguito` y `docker start chanchito`
+    * corremos la app en el navegador en localhost:3000 y localhost:3000/crear
+    * Ahora podemos ver los logs `docker logs chanchito`
 
 

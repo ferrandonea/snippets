@@ -112,4 +112,6 @@ CMD ["node", "/home/app/index.js"]
     * corremos la app en el navegador en localhost:3000 y localhost:3000/crear
     * Ahora podemos ver los logs `docker logs chanchito`
 
+    CANAL HolaMundo
+
 

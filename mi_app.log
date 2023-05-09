@@ -1,0 +1,19 @@
+2023-05-09 10:15:44,653 - MiLogger - DEBUG - Este es un mensaje de nivel DEBUG
+2023-05-09 10:15:44,653 - MiLogger - INFO - Este es un mensaje de nivel INFO
+2023-05-09 10:15:44,653 - MiLogger - WARNING - Este es un mensaje de nivel WARNING
+2023-05-09 10:15:44,653 - MiLogger - ERROR - Este es un mensaje de nivel ERROR
+2023-05-09 10:15:44,653 - MiLogger - CRITICAL - Este es un mensaje de nivel CRITICAL
+2023-05-09 10:16:41,647 - MiLogger - DEBUG - Este es un mensaje de nivel DEBUG
+2023-05-09 10:16:41,648 - MiLogger - INFO - Este es un mensaje de nivel INFO
+2023-05-09 10:16:41,648 - MiLogger - WARNING - Este es un mensaje de nivel WARNING
+2023-05-09 10:16:41,648 - MiLogger - ERROR - Este es un mensaje de nivel ERROR
+2023-05-09 10:16:41,648 - MiLogger - CRITICAL - Este es un mensaje de nivel CRITICAL
+2023-05-09 10:16:41,648 - MiLogger - INFO - nuevo log
+2023-05-09 10:18:25,140 - MiLogger - INFO - nuevo log
+INFO    : 	 importando.py <module> 3 - nuevo log
+INFO    : 	 testlogimport.py <module> 3 - HOLA
+INFO    : 	 testlogimport.py <module> 3 - HOLA
+INFO    : 	 testlogimport.py <module> 3 - HOLA
+INFO    : 	 testlogimport.py <module> 3 - HOLA
+INFO    : 	 testlogimport.py <module> 3 - HOLA
+INFO    : 	 2023-05-09 11:53:27,998 testlogimport.py <module> 3 - HOLA
